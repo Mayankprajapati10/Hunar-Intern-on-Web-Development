@@ -3,97 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Homepage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: right;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        section {
-            padding: 20px;
-            margin: 20px 0;
-            background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            padding: 20px;
-            margin-top: 20px;
-            color: #fff;
-            background-color: #333;
-            text-align: center;
-        }
-        .bio {
-            margin-top: 20px;
-            line-height: 1.6;
-        }
-        .social {
-            margin-top: 20px;
-        }
-        .social a {
-            text-decoration: none;
-            color: #333;
-            margin: 0 10px;
-        }
-        .contact-info {
-            margin-top: 20px;
-            line-height: 1.6;
-        }
-        .contact-info p {
-            margin: 5px 0;
-        }
-    </style>
+    <title>Hunar INTERN</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div id="branding">
-                <h1>My Personal Homepage</h1>
+                <h1>Hunar INTERN</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#bio">Bio</a></li>
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -101,39 +26,68 @@
 
     <section id="home">
         <div class="container">
-            <h2>Welcome!</h2>
-            <p>This is a simple personal homepage template. You can customize it to include any information you'd like.</p>
+            <h2>Welcome to Our Online Courses</h2>
+            <p>Explore a variety of courses designed to help you learn and grow.</p>
         </div>
     </section>
 
-    <section id="bio">
+    <section id="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p class="bio">
-                Hi! My name is [Your Name]. I am a [Your Profession] with a passion for [Your Interests]. I enjoy working on projects related to [Your Specialization].
-            </p>
+            <h2>About Us</h2>
+            <p>We are dedicated to providing the best online courses to help you achieve your goals.</p>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <div class="course">
+                <h3>Course 1: Introduction to Programming</h3>
+                <p>Learn the basics of programming with this introductory course.</p>
+            </div>
+            <div class="course">
+                <h3>Course 2: Advanced Web Development</h3>
+                <p>Enhance your web development skills with advanced techniques and tools.</p>
+            </div>
+            <!-- Add more courses as needed -->
+        </div>
+    </section>
+
+    <section id="register">
+        <div class="container">
+            <h2>Register for a Course</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="course">Course:</label>
+                <select id="course" name="course">
+                    <option value="course1">Introduction to Programming</option>
+                    <option value="course2">Advanced Web Development</option>
+                    <!-- Add more courses as needed -->
+                </select>
+
+                <input type="submit" value="Register">
+            </form>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <p><strong>Phone:</strong> +123 456 7890</p>
-                <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-                <p><strong>Address:</strong> 123 Your Street, Your City, Your Country</p>
-            </div>
-            <p class="social">
-                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-                <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
-                <a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a>
-            </p>
+            <h2>Contact Us</h2>
+            <p>Email: info@onlinecourses.com</p>
+            <p>Phone: +91 95456 77890</p>
+            <p>Address: New Delhi, India</p>
         </div>
     </section>
 
     <footer>
-        <p>Copyright &copy; 2024 My Personal Homepage</p>
+        <div class="container">
+            <p>&copy; 2024 Online Course Website. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
